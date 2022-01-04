@@ -1,7 +1,68 @@
+/* Selectores */
+
 #titulo {
   color: tomato
 }
 
 .texto {
   color: slateblue
+}
+
+p.texto {
+  color: slateblue
+}
+
+p.especial {
+  color: mediumseagreen
+}
+
+/* Siempre que escribamos CSS, lo ultimo que escribamos tendra preferencia sobre lo anterior. */
+
+div p {
+  color: aquamarine;
+}
+
+div h2,
+div h3 {
+  color: brown
+}
+
+* {
+  font-size: 24px;
+  color: black;
+}
+
+/* Para hexadecimales, empieza en 0 (negro) y termina en f (blanco). Pudiendo colocar 6 caracteres. */
+
+/* .color {
+  color: #FF00FF
+} */
+
+/* .color {
+  color: rgb(255, 0, 0)
+} */
+
+.color {
+  /* border: 5px red inset; */
+  /*
+  dotted
+  dashed
+  solid
+  double
+  groove
+  ridge
+  inset
+  outset
+  none
+  hidden
+  */
+  border-style: solid;
+  border-color: blue;
+  border-radius: 5px;
+  border-width: 2rem;
+}
+
+#fondo {
+  background-color: rgba(255, 0, 0);
+  opacity: 0.3;
 }
